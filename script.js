@@ -1,5 +1,5 @@
 // Array of special characters to be included in password
-var specialCharacters = [
+let specialCharacters = [
   '@',
   '%',
   '+',
@@ -26,10 +26,10 @@ var specialCharacters = [
 ];
 
 // Array of numeric characters to be included in password
-var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+let numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 // Array of lowercase characters to be included in password
-var lowerCasedCharacters = [
+let lowerCasedCharacters = [
   'a',
   'b',
   'c',
@@ -59,7 +59,7 @@ var lowerCasedCharacters = [
 ];
 
 // Array of uppercase characters to be included in password
-var upperCasedCharacters = [
+let upperCasedCharacters = [
   'A',
   'B',
   'C',
@@ -88,10 +88,19 @@ var upperCasedCharacters = [
   'Z'
 ];
 
+let userOptions = []
+
+
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  console.log(prompt("Please enter how many characters you would like your password to be. Enter a number between 10 and 64 only."));
+  console.log(confirm("Would you like lowercase characters? Select 'OK' for YES or 'Cancel' for NO."));
+  console.log(confirm("Would you like uppercase characters? Select 'OK' for YES or 'Cancel' for NO."));
+  return userOptions.push
 }
+console.log(userOptions)
+
+getPasswordOptions()
 
 // Function for getting a random element from an array
 function getRandom(arr) {
